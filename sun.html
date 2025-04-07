@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置移动设备视口，确保响应式设计正常工作 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太阳系 - 太阳</title>
+    <!-- 引入主样式表 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入太阳页面特定样式 -->
+    <link rel="stylesheet" href="sun-styles.css">
+    <!-- 引入Font Awesome图标库，用于移动菜单图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="sun-page">
+    <!-- 顶部导航栏 - 使用sun-nav类添加太阳页面特定样式 -->
+    <nav class="top-nav sun-nav">
+        <div class="nav-content">
+            <!-- 网站标志/名称 -->
+            <div class="logo">太空探索者</div>
+            <!-- 移动端菜单切换按钮 - 在小屏幕上显示 -->
+            <button class="mobile-menu-toggle" aria-label="切换导航菜单">
+                <!-- 汉堡菜单图标 - 点击时会变成X图标 -->
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- 导航链接容器 - 在移动设备上会隐藏并通过按钮切换显示 -->
+            <div class="nav-links">
+                <!-- 各页面链接，active类表示当前页面 -->
+                <a href="index.html" class="structure-link">结构</a>
+                <a href="planet.html" class="planet-link">行星</a>
+                <a href="sun.html" class="active sun-link">太阳</a>
+                <a href="moon.html" class="moon-link">月球</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sun-hero">
+        <h1 class="sun-title">太阳系的<br>核心</h1>
+        <div class="sun-animation">
+            <div class="sun-core"></div>
+            <div class="sun-rays"></div>
+        </div>
+    </div>
+
+    <div class="sun-content">
+        <div class="container">
+            <div class="sun-introduction">
+                <p class="intro-text">
+                    太阳是太阳系中心的恒星。它是一个巨大的热等离子体球体，
+                    通过核心产生的核聚变反应提供能量膨胀和加热。部分
+                    能量以光、紫外线和红外线辐射的形式从其表面发出，提供
+                    地球上大部分生命所需的能量。
+                </p>
+                <p class="intro-text">
+                    太阳是一颗G型主序星（G2V），通常被称为黄矮星，尽管其
+                    发出的光实际上是白色的。它大约形成于46亿年前，由一个大型分子云区域内
+                    物质的引力坍缩形成。
+                </p>
+            </div>
+
+            <div class="sun-info-grid">
+                <div class="sun-card facts">
+                    <h2>关键事实</h2>
+                    <div class="fact-list">
+                        <div class="fact-item">
+                            <h3>视觉亮度</h3>
+                            <p>−26.74 (V)</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>绝对星等</h3>
+                            <p>4.83</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>金属含量</h3>
+                            <p>Z = 0.0122</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>角大小</h3>
+                            <p>0.527–0.545°</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>年龄</h3>
+                            <p>46亿年</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>银河系公转周期</h3>
+                            <p>2.25-2.5亿年</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sun-card composition">
+                    <h2>成分构成</h2>
+                    <div class="composition-chart">
+                        <div class="element-row">
+                            <div class="element-icon element-box">
+                                <span class="element-number">1</span>
+                                <span class="element-symbol">H</span>
+                                <span class="element-weight">1.008</span>
+                            </div>
+                            <div class="element-info">
+                                <h4>氢 (H)</h4>
+                                <div class="chart-bar">
+                                    <div class="bar-fill hydrogen" style="width: 74.9%">
+                                        <span>74.9%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-row">
+                            <div class="element-icon element-box">
+                                <span class="element-number">2</span>
+                                <span class="element-symbol">He</span>
+                                <span class="element-weight">4.0026</span>
+                            </div>
+                            <div class="element-info">
+                                <h4>氦 (He)</h4>
+                                <div class="chart-bar">
+                                    <div class="bar-fill helium" style="width: 23.8%">
+                                        <span>23.8%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-row">
+                            <div class="element-icon element-box">
+                                <span class="element-number">8</span>
+                                <span class="element-symbol">O</span>
+                                <span class="element-weight">16.00</span>
+                            </div>
+                            <div class="element-info">
+                                <h4>氧 (O₂)</h4>
+                                <div class="chart-bar">
+                                    <div class="bar-fill oxygen" style="width: 1%">
+                                        <span>~1%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sun-card temperature">
+                    <h2>温度</h2>
+                    <div class="temp-list">
+                        <div class="temp-item">
+                            <h4>核心</h4>
+                            <p>15,700,000 K</p>
+                        </div>
+                        <div class="temp-item">
+                            <h4>光球层</h4>
+                            <p>5,772 K</p>
+                        </div>
+                        <div class="temp-item">
+                            <h4>日冕层</h4>
+                            <p>5,000,000 K</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sun-card velocity">
+                    <h2>速度</h2>
+                    <div class="velocity-list">
+                        <div class="velocity-item">
+                            <h4>绕银河系中心</h4>
+                            <p>251 公里/秒</p>
+                        </div>
+                        <div class="velocity-item">
+                            <h4>相对恒星邻域</h4>
+                            <p>20 公里/秒</p>
+                        </div>
+                        <div class="velocity-item">
+                            <h4>相对宇宙微波背景</h4>
+                            <p>370 公里/秒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sun-location">
+                <h2>在太阳系中的位置</h2>
+                <div class="location-content">
+                    <div class="location-image">
+                        <img src="images/solar-system.jpg" alt="太阳系位置">
+                    </div>
+                    <div class="location-text">
+                        <p>
+                            太阳有八颗已知的行星围绕它运行。这包括四颗类地行星
+                            （水星、金星、地球和火星），两颗气态巨行星（木星和土星），以及两颗冰巨行星
+                            （天王星和海王星）。太阳系还有九个被普遍认为是
+                            矮行星的天体和更多的候选天体，一个小行星带，众多彗星，以及
+                            大量位于海王星轨道之外的冰天体。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sun-neighborhood">
+                <h2>天体邻域</h2>
+                <div class="neighborhood-content">
+                    <div class="neighborhood-text">
+                        <p>
+                            太阳位于本地泡（Local Bubble）内，这是银河系内一个由超新星爆炸形成的充满稀薄热气体的空腔。
+                            最靠近太阳的恒星是比邻星，距离太阳系约4.25光年。比邻星是半人马座比邻星系统的一部分，
+                            该系统包括比邻星A、比邻星B和比邻星C（又称为比邻星c或比邻星Ab）。
+                        </p>
+                    </div>
+                    <div class="neighborhood-image">
+                        <img src="images/milky-way.jpg" alt="银河系">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sun-footer">
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">
+                        <i class="fas fa-meteor"></i>
+                        <span>返回太阳系结构</span>
+                    </a>
+                    <a href="planet.html" class="footer-link">
+                        <i class="fas fa-globe"></i>
+                        <span>探索行星</span>
+                    </a>
+                    <a href="moon.html" class="footer-link">
+                        <i class="fas fa-moon"></i>
+                        <span>了解月球</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="sun-script.js"></script>
+</body>
+</html> 

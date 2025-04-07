@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置移动设备视口，确保响应式设计正常工作 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太阳系 - 行星</title>
+    <!-- 引入主样式表 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入Font Awesome图标库，用于移动菜单图标和UI元素 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 移动设备特定元标签，优化移动体验 -->
+    <meta name="theme-color" content="#000000"> <!-- 设置移动浏览器主题色 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- 启用iOS全屏模式 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- iOS状态栏样式 -->
+</head>
+<body>
+    <!-- 顶部导航栏 - 在移动设备上会变为固定悬浮菜单 -->
+    <nav class="top-nav">
+        <div class="nav-content">
+            <!-- 网站标志/名称 -->
+            <div class="logo">太空探索者</div>
+            <!-- 移动端菜单切换按钮 - 在小屏幕上显示，包含辅助功能标签 -->
+            <button class="mobile-menu-toggle" aria-label="切换导航菜单">
+                <!-- 汉堡菜单图标 - 点击时会变成X图标 -->
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- 导航链接容器 - 在移动设备上会隐藏并通过按钮切换显示 -->
+            <div class="nav-links">
+                <!-- 各页面链接，active类表示当前页面 -->
+                <a href="index.html" class="structure-link">结构</a>
+                <a href="planet.html" class="active planet-link">行星</a>
+                <a href="sun.html" class="sun-link">太阳</a>
+                <a href="moon.html" class="moon-link">月球</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section planet-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">太阳系<br>行星</h1>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="container">
+            <div class="planet-categories">
+                <div class="category inner-planets">
+                    <h2 class="category-title">内行星/类地行星</h2>
+                    <p class="category-description">
+                        内行星主要由岩石组成。所有类地行星都有相同的基本结构，
+                        如中央金属核心（主要是铁）和周围的硅酸盐地幔。它们可以有表面
+                        结构，如峡谷、陨石坑、山脉和火山。
+                    </p>
+                    <div class="planets-grid">
+                        <div class="planet-card" onclick="location.href='#mercury'">
+                            <div class="planet-image">
+                                <img src="images/Mercury.jpg" alt="水星">
+                            </div>
+                            <h3>水星</h3>
+                            <p>距离太阳最近的行星</p>
+                            <p class="view-more">点击查看更详细的信息</p>
+                        </div>
+                        <div class="planet-card" onclick="location.href='#venus'">
+                            <div class="planet-image">
+                                <img src="images/Venus.avif" alt="金星">
+                            </div>
+                            <h3>金星</h3>
+                            <p>地球的"姐妹"行星</p>
+                            <p class="view-more">点击查看更详细的信息</p>
+                        </div>
+                        <div class="planet-card" onclick="location.href='#earth'">
+                            <div class="planet-image">
+                                <img src="images/Earth.jpg" alt="地球">
+                            </div>
+                            <h3>地球</h3>
+                            <p>我们的家园行星</p>
+                            <p class="view-more">点击查看更详细的信息</p>
+                        </div>
+                        <div class="planet-card" onclick="location.href='#mars'">
+                            <div class="planet-image">
+                                <img src="images/Mars.jpg" alt="火星">
+                            </div>
+                            <h3>火星</h3>
+                            <p>红色行星</p>
+                            <p class="view-more">点击查看更详细的信息</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category outer-planets">
+                    <h2 class="category-title">外行星（气态巨行星和冰巨行星）</h2>
+                    <p class="category-description">
+                        外行星是围绕它们的大型气体球。木星、土星、天王星和海王星
+                        比内行星大得多，主要由氢和氦组成。
+                    </p>
+                    <div class="planets-grid">
+                        <div class="planet-card" onclick="location.href='#jupiter'">
+                            <div class="planet-image">
+                                <img src="images/Jupiter.jpeg" alt="木星">
+                            </div>
+                            <h3>木星</h3>
+                            <p>最大的行星</p>
+                            <p class="view-more">点击查看更详细的信息</p>
+                        </div>
+                        <div class="planet-card" onclick="location.href='#saturn'">
+                            <div class="planet-image">
+                                <img src="images/Saturn.jpg" alt="土星">
+                            </div>
+                            <h3>土星</h3>
+                            <p>以其环而闻名</p>
+                            <p class="view-more">点击查看更详细的信息</p>
+                        </div>
+                        <div class="planet-card" onclick="location.href='#uranus'">
+                            <div class="planet-image">
+                                <img src="images/Uranus.jpg" alt="天王星">
+                            </div>
+                            <h3>天王星</h3>
+                            <p>倾斜的行星</p>
+                            <p class="view-more">点击查看更详细的信息</p>
+                        </div>
+                        <div class="planet-card" onclick="location.href='#neptune'">
+                            <div class="planet-image">
+                                <img src="images/Neptune.jpg" alt="海王星">
+                            </div>
+                            <h3>海王星</h3>
+                            <p>风暴最多的行星</p>
+                            <p class="view-more">点击查看更详细的信息</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 行星详细信息部分 -->
+            <div class="planet-details">
+                <!-- 水星 -->
+                <div id="mercury" class="planet-detail-section">
+                    <h2 class="planet-detail-title">水星</h2>
+                    <div class="planet-detail-content">
+                        <div class="planet-detail-image">
+                            <img src="images/Mercury.jpg" alt="水星">
+                        </div>
+                        <div class="planet-detail-info">
+                            <p class="planet-detail-description">
+                                水星是太阳系中最小和最内侧的行星。它没有天然卫星，也没有明显的大气层。
+                                这颗行星有一个大型铁核，产生的磁场强度约为地球磁场的1%。
+                            </p>
+                            <div class="planet-detail-stats">
+                                <div class="stat-item">
+                                    <h4>距离太阳</h4>
+                                    <p>0.39 AU</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>轨道周期</h4>
+                                    <p>88天</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>直径</h4>
+                                    <p>4,879公里</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>卫星数量</h4>
+                                    <p>0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 金星 -->
+                <div id="venus" class="planet-detail-section">
+                    <h2 class="planet-detail-title">金星</h2>
+                    <div class="planet-detail-content">
+                        <div class="planet-detail-image">
+                            <img src="images/Venus.avif" alt="金星">
+                        </div>
+                        <div class="planet-detail-info">
+                            <p class="planet-detail-description">
+                                金星是太阳系中离太阳第二近的行星，也是距离地球最近的行星邻居。
+                                它常被称为地球的孪生星，因为它们在大小和密度上很相似。
+                                金星有浓厚的大气层，能够捕获热量，使其成为我们太阳系中最热的行星。
+                            </p>
+                            <div class="planet-detail-stats">
+                                <div class="stat-item">
+                                    <h4>距离太阳</h4>
+                                    <p>0.72 AU</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>轨道周期</h4>
+                                    <p>225天</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>直径</h4>
+                                    <p>12,104公里</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>卫星数量</h4>
+                                    <p>0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 地球 -->
+                <div id="earth" class="planet-detail-section">
+                    <h2 class="planet-detail-title">地球</h2>
+                    <div class="planet-detail-content">
+                        <div class="planet-detail-image">
+                            <img src="images/Earth.jpg" alt="地球">
+                        </div>
+                        <div class="planet-detail-info">
+                            <p class="planet-detail-description">
+                                地球是太阳系中第三颗行星，也是迄今为止已知的唯一有生命居住的天体。
+                                地球的大气层主要由氮气和氧气组成，使生命能够呼吸和生存。
+                                表面约71%被水覆盖，这是太阳系中独特的特征。
+                            </p>
+                            <div class="planet-detail-stats">
+                                <div class="stat-item">
+                                    <h4>距离太阳</h4>
+                                    <p>1.00 AU</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>轨道周期</h4>
+                                    <p>365.26天</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>直径</h4>
+                                    <p>12,742公里</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>卫星数量</h4>
+                                    <p>1（月球）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 火星 -->
+                <div id="mars" class="planet-detail-section">
+                    <h2 class="planet-detail-title">火星</h2>
+                    <div class="planet-detail-content">
+                        <div class="planet-detail-image">
+                            <img src="images/Mars.jpg" alt="火星">
+                        </div>
+                        <div class="planet-detail-info">
+                            <p class="planet-detail-description">
+                                火星是太阳系中的第四颗行星，常被称为"红色行星"，因为其表面富含氧化铁，使其呈现红色。
+                                它拥有稀薄的大气层，主要由二氧化碳组成。火星上有太阳系最高的已知山脉——奥林匹斯山。
+                            </p>
+                            <div class="planet-detail-stats">
+                                <div class="stat-item">
+                                    <h4>距离太阳</h4>
+                                    <p>1.52 AU</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>轨道周期</h4>
+                                    <p>687天</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>直径</h4>
+                                    <p>6,779公里</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>卫星数量</h4>
+                                    <p>2（火卫一和火卫二）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 木星 -->
+                <div id="jupiter" class="planet-detail-section">
+                    <h2 class="planet-detail-title">木星</h2>
+                    <div class="planet-detail-content">
+                        <div class="planet-detail-image">
+                            <img src="images/Jupiter.jpeg" alt="木星">
+                        </div>
+                        <div class="planet-detail-info">
+                            <p class="planet-detail-description">
+                                木星是太阳系中最大的行星，质量是地球的318倍。它主要由氢和氦组成，是一个气态巨行星。
+                                木星的大红斑是一个巨大的风暴，已经存在了至少400年，它大到可以装下三个地球。
+                            </p>
+                            <div class="planet-detail-stats">
+                                <div class="stat-item">
+                                    <h4>距离太阳</h4>
+                                    <p>5.20 AU</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>轨道周期</h4>
+                                    <p>11.86年</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>直径</h4>
+                                    <p>139,820公里</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>卫星数量</h4>
+                                    <p>79+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 土星 -->
+                <div id="saturn" class="planet-detail-section">
+                    <h2 class="planet-detail-title">土星</h2>
+                    <div class="planet-detail-content">
+                        <div class="planet-detail-image">
+                            <img src="images/Saturn.jpg" alt="土星">
+                        </div>
+                        <div class="planet-detail-info">
+                            <p class="planet-detail-description">
+                                土星以其壮观的环系而闻名，是太阳系中第二大行星。这些环主要由冰粒子和少量岩石碎片组成。
+                                像木星一样，土星也是一个气态巨行星，主要由氢和氦组成。
+                            </p>
+                            <div class="planet-detail-stats">
+                                <div class="stat-item">
+                                    <h4>距离太阳</h4>
+                                    <p>9.58 AU</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>轨道周期</h4>
+                                    <p>29.46年</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>直径</h4>
+                                    <p>116,460公里</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>卫星数量</h4>
+                                    <p>82+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 天王星 -->
+                <div id="uranus" class="planet-detail-section">
+                    <h2 class="planet-detail-title">天王星</h2>
+                    <div class="planet-detail-content">
+                        <div class="planet-detail-image">
+                            <img src="images/Uranus.jpg" alt="天王星">
+                        </div>
+                        <div class="planet-detail-info">
+                            <p class="planet-detail-description">
+                                天王星是太阳系中第七颗行星，也是首个通过望远镜发现的行星。它的独特之处在于其旋转轴倾斜约98度，几乎平行于其轨道平面。
+                                天王星是一个冰巨行星，主要由氢、氦和冰物质组成。
+                            </p>
+                            <div class="planet-detail-stats">
+                                <div class="stat-item">
+                                    <h4>距离太阳</h4>
+                                    <p>19.22 AU</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>轨道周期</h4>
+                                    <p>84.01年</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>直径</h4>
+                                    <p>50,724公里</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>卫星数量</h4>
+                                    <p>27</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 海王星 -->
+                <div id="neptune" class="planet-detail-section">
+                    <h2 class="planet-detail-title">海王星</h2>
+                    <div class="planet-detail-content">
+                        <div class="planet-detail-image">
+                            <img src="images/Neptune.jpg" alt="海王星">
+                        </div>
+                        <div class="planet-detail-info">
+                            <p class="planet-detail-description">
+                                海王星是太阳系中最远的行星，也是根据数学计算而非直接观测发现的第一颗行星。
+                                它是一个冰巨行星，拥有强大的风暴系统，风速可达每小时2,100公里，是太阳系中最快的。
+                            </p>
+                            <div class="planet-detail-stats">
+                                <div class="stat-item">
+                                    <h4>距离太阳</h4>
+                                    <p>30.05 AU</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>轨道周期</h4>
+                                    <p>164.8年</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>直径</h4>
+                                    <p>49,244公里</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>卫星数量</h4>
+                                    <p>14</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

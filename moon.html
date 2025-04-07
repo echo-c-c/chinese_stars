@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置移动设备视口，确保响应式设计正常工作 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太阳系 - 月球</title>
+    <!-- 引入主样式表 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入月球页面特定样式 -->
+    <link rel="stylesheet" href="moon-styles.css">
+    <!-- 引入Font Awesome图标库，用于移动菜单图标和其他UI元素 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="moon-page">
+    <!-- 顶部导航栏 - 使用moon-nav类添加月球页面特定样式 -->
+    <nav class="top-nav moon-nav">
+        <div class="nav-content">
+            <!-- 网站标志/名称 -->
+            <div class="logo">太空探索者</div>
+            <!-- 移动端菜单切换按钮 - 在小屏幕上显示 -->
+            <button class="mobile-menu-toggle" aria-label="切换导航菜单">
+                <!-- 汉堡菜单图标 - 点击时会变成X图标 -->
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- 导航链接容器 - 在移动设备上会隐藏并通过按钮切换显示 -->
+            <div class="nav-links">
+                <!-- 各页面链接，active类表示当前页面 -->
+                <a href="index.html" class="structure-link">结构</a>
+                <a href="planet.html" class="planet-link">行星</a>
+                <a href="sun.html" class="sun-link">太阳</a>
+                <a href="moon.html" class="active moon-link">月球</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="moon-hero">
+        <div class="moon-parallax">
+            <div class="stars-layer"></div>
+            <div class="moon-image"></div>
+            <div class="clouds-layer"></div>
+        </div>
+        <h1 class="moon-title">地球忠实的<br>伴侣</h1>
+    </div>
+
+    <div class="moon-content">
+        <div class="container">
+            <div class="moon-introduction">
+                <p class="intro-text">
+                    月球是地球唯一的天然卫星，也是太阳系中第五大卫星。
+                    它是太阳系中相对于其行星最大的天然卫星。月球自古以来就是
+                    人类着迷的对象，影响着我们的日历、文化，并且
+                    启发了无数的故事和神话。
+                </p>
+                <p class="intro-text">
+                    月球形成于大约45亿年前，不久晚于地球。最广泛
+                    接受的解释是月球形成于地球与一个火星大小的天体（称为忒亚）
+                    碰撞后的碎片。
+                </p>
+            </div>
+
+            <div class="moon-phases-section">
+                <h2 class="section-title">月相</h2>
+                <div class="phases-container">
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="images/moon/New Moon.jpg" alt="新月" class="phase-img">
+                        </div>
+                        <h3>新月</h3>
+                        <p>当月球位于地球和太阳之间时，朝向地球的一面不被照亮。</p>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0034.jpg" alt="娥眉月" class="phase-img">
+                        </div>
+                        <h3>娥眉月</h3>
+                        <p>随着月球远离太阳的方向移动，一小部分新月形状变得可见。</p>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0071.jpg" alt="上弦月" class="phase-img">
+                        </div>
+                        <h3>上弦月</h3>
+                        <p>月球可见面的一半被照亮。</p>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0106.jpg" alt="盈凸月" class="phase-img">
+                        </div>
+                        <h3>盈凸月</h3>
+                        <p>可见面的一半以上被照亮，接近满月。</p>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0142.jpg" alt="满月" class="phase-img">
+                        </div>
+                        <h3>满月</h3>
+                        <p>月球的整个可见面都被照亮。</p>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0177.jpg" alt="亏凸月" class="phase-img">
+                        </div>
+                        <h3>亏凸月</h3>
+                        <p>被照亮的部分开始减少。</p>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0213.jpg" alt="下弦月" class="phase-img">
+                        </div>
+                        <h3>下弦月</h3>
+                        <p>可见面的一半被照亮，与上弦月相反。</p>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0249.jpg" alt="残月" class="phase-img">
+                        </div>
+                        <h3>残月</h3>
+                        <p>在回到新月前，仍有一小部分新月形状可见。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moon-info-grid">
+                <div class="moon-card facts">
+                    <div class="card-backdrop"></div>
+                    <h2>关键事实</h2>
+                    <div class="fact-list">
+                        <div class="fact-item">
+                            <h3>距离地球</h3>
+                            <p>384,400 公里（平均）</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>轨道周期</h3>
+                            <p>27.3 天</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>直径</h3>
+                            <p>3,474 公里</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>表面重力</h3>
+                            <p>1.62 米/秒²（0.1654 g）</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>温度范围</h3>
+                            <p>-173°C 至 127°C</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>年龄</h3>
+                            <p>45亿年</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moon-card impact">
+                    <div class="card-backdrop"></div>
+                    <h2>显著特征</h2>
+                    <div class="impact-container">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h4>月海（玄武岩平原）</h4>
+                                <p>由古代火山喷发形成的大型黑色平原</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h4>环形山</h4>
+                                <p>由陨石和小行星撞击形成的撞击坑</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h4>高地</h4>
+                                <p>浅色、布满陨石坑的区域</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-route"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h4>月沟</h4>
+                                <p>类似通道的长而窄的凹陷</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moon-card exploration">
+                    <div class="card-backdrop"></div>
+                    <h2>探索历程</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="date">1959年</div>
+                            <div class="event">
+                                <h4>月球2号</h4>
+                                <p>首个撞击月球表面的航天器（苏联）</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="date">1969年</div>
+                            <div class="event">
+                                <h4>阿波罗11号</h4>
+                                <p>尼尔·阿姆斯特朗成为第一个踏上月球的人类（美国）</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="date">1994年</div>
+                            <div class="event">
+                                <h4>克莱门汀任务</h4>
+                                <p>首次完整月球表面矿物测绘（美国）</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="date">2013年</div>
+                            <div class="event">
+                                <h4>嫦娥三号</h4>
+                                <p>首个在月球表面软着陆的中国航天器</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moon-card effects">
+                    <div class="card-backdrop"></div>
+                    <h2>对地球的影响</h2>
+                    <div class="effects-list">
+                        <div class="effect-item">
+                            <div class="effect-icon">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <div class="effect-info">
+                                <h4>潮汐</h4>
+                                <p>月球引力导致海洋潮汐，影响海岸线和海洋生态</p>
+                            </div>
+                        </div>
+                        <div class="effect-item">
+                            <div class="effect-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="effect-info">
+                                <h4>稳定地轴</h4>
+                                <p>月球帮助稳定地球的旋转轴，减少气候波动</p>
+                            </div>
+                        </div>
+                        <div class="effect-item">
+                            <div class="effect-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="effect-info">
+                                <h4>历法影响</h4>
+                                <p>月相周期影响了许多文化的历法系统</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fun-facts-section">
+                <h2 class="section-title">有趣知识</h2>
+                <div class="fun-facts-container">
+                    <div class="fun-fact">
+                        <div class="fun-fact-icon">
+                            <i class="fas fa-space-shuttle"></i>
+                        </div>
+                        <p>月球以相同的面始终朝向地球，这称为"同步自转"。这就是为什么我们总是看到月球的同一面。</p>
+                    </div>
+                    <div class="fun-fact">
+                        <div class="fun-fact-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <p>月球上有6面美国国旗，由阿波罗任务宇航员放置。由于紫外线辐射，这些国旗现在可能已经褪色变白。</p>
+                    </div>
+                    <div class="fun-fact">
+                        <div class="fun-fact-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <p>月球上行走的感觉就像是在跳跃，因为月球的重力只有地球的六分之一。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moon-footer">
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">
+                        <i class="fas fa-meteor"></i>
+                        <span>返回太阳系结构</span>
+                    </a>
+                    <a href="planet.html" class="footer-link">
+                        <i class="fas fa-globe"></i>
+                        <span>探索行星</span>
+                    </a>
+                    <a href="sun.html" class="footer-link">
+                        <i class="fas fa-sun"></i>
+                        <span>了解太阳</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="moon-script.js"></script>
+</body>
+</html> 

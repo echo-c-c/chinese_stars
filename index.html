@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置移动设备视口，确保响应式设计正常工作 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太阳系 - 行星探索</title>
+    <!-- 引入主样式表 -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入Font Awesome图标库，用于移动菜单图标和各种UI元素 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 图标样式 - 结构页面特有的圆形图标容器 */
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            transition: all 0.3s ease; /* 悬停动画过渡效果 */
+        }
+        
+        .icon-container i {
+            font-size: 40px;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        
+        /* 鼠标悬停效果 - 旋转和发光 */
+        .structure-item:hover .icon-container {
+            transform: rotate(15deg);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* 鼠标悬停效果 - 图标放大 */
+        .structure-item:hover .icon-container i {
+            transform: scale(1.2);
+        }
+        
+        /* 图标颜色 - 每个对象使用不同的主题色 */
+        .sun-icon { color: #ffcc00; } /* 太阳图标使用黄色 */
+        .planets-icon { color: #66ccff; } /* 行星图标使用蓝色 */
+        .asteroids-icon { color: #cc9966; } /* 小行星图标使用棕色 */
+        .comets-icon { color: #99ccff; } /* 彗星图标使用浅蓝色 */
+        .satellites-icon { color: #cccccc; } /* 卫星图标使用灰色 */
+        .stars-icon { color: #ffffff; } /* 恒星图标使用白色 */
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 - 在移动设备上会变为固定悬浮菜单 -->
+    <nav class="top-nav">
+        <div class="nav-content">
+            <!-- 网站标志/名称 -->
+            <div class="logo">太空探索者</div>
+            <!-- 移动端菜单切换按钮 - 在小屏幕上显示，包含辅助功能标签 -->
+            <button class="mobile-menu-toggle" aria-label="切换导航菜单">
+                <!-- 汉堡菜单图标 - 点击时会变成X图标 -->
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- 导航链接容器 - 在移动设备上会隐藏并通过按钮切换显示 -->
+            <div class="nav-links">
+                <!-- 各页面链接，active类表示当前页面(结构页) -->
+                <a href="index.html" class="active structure-link">结构</a>
+                <a href="planet.html" class="planet-link">行星</a>
+                <a href="sun.html" class="sun-link">太阳</a>
+                <a href="moon.html" class="moon-link">月球</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">行星<br>探索</h1>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="container">
+            <h2 class="section-title">我们的太阳系中存在哪些天体？</h2>
+            
+            <div class="structure-grid">
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-sun sun-icon"></i>
+                        </div>
+                    </div>
+                    <h3>太阳</h3>
+                    <p>太阳是太阳系中最大的恒星，占太阳系总质量的99.86%。它位于中心，是一个由热等离子体组成的球体。其核心持续进行核反应，以光和红外辐射的形式释放能量。</p>
+                </div>
+
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-globe-americas planets-icon"></i>
+                        </div>
+                    </div>
+                    <h3>行星</h3>
+                    <p>太阳系由八大行星组成，分别是水星、金星、地球、火星、木星、土星、天王星和海王星。水星距离太阳最近，也是最小的行星。它没有天然卫星。</p>
+                </div>
+
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-meteor asteroids-icon"></i>
+                        </div>
+                    </div>
+                    <h3>小行星</h3>
+                    <p>小行星是大型且不规则形状的碳、岩石或金属碎片，主要分布在小行星带中，在火星和木星之间绕太阳运行。这些也常被称为矮行星。</p>
+                </div>
+
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-comet comets-icon"></i>
+                        </div>
+                    </div>
+                    <h3>彗星</h3>
+                    <p>这些是由冰组成的小型不规则形状的天体。人们认为它们通常来自柯伊伯带。当彗星接近太阳时，由于热量使冰气化，在彗星后面留下美丽的尾巴。</p>
+                </div>
+
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-satellite satellites-icon"></i>
+                        </div>
+                    </div>
+                    <h3>卫星</h3>
+                    <p>围绕行星以与行星相同方向运行的天体被称为卫星。月球是地球的天然卫星。卫星也可以是人造的，称为人造卫星。</p>
+                </div>
+
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-star stars-icon"></i>
+                        </div>
+                    </div>
+                    <h3>恒星</h3>
+                    <p>恒星是由等离子体组成的发光球体，受其自身重力束缚。在夜晚，它们用肉眼就能轻易看到。这些恒星被分组为星座和星群。</p>
+                </div>
+            </div>
+
+            <div class="distance-info">
+                <p class="au-info">1 AU（天文单位）= 149,598,000 公里</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
